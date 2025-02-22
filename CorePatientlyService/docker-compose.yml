@@ -1,0 +1,6 @@
+﻿services:
+  corepatientlyservice:
+    image: corepatientlyservice
+    build:
+      context: .
+      dockerfile: Dockerfile
