@@ -1,4 +1,4 @@
-namespace CorePatientlyService.Models.Domain;
+namespace CorePatientlyService.Models.User;
 
 public class User
 {

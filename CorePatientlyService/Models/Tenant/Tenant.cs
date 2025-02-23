@@ -1,4 +1,4 @@
-namespace CorePatientlyService.Models.Domain;
+namespace CorePatientlyService.Models.Tenant;
 
 public class Tenant
 {
