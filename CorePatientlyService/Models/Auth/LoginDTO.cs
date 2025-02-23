@@ -1,4 +1,4 @@
-namespace CorePatientlyService.Models.DTO;
+namespace CorePatientlyService.Models.Auth;
 
 public class LoginDTO
 {

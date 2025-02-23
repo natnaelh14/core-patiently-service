@@ -1,6 +1,6 @@
-using CorePatientlyService.Models.Domain;
+using CorePatientlyService.Models.User;
 
-namespace CorePatientlyService.Models.DTO;
+namespace CorePatientlyService.Models.Auth;
 
 public class SignupDTO
 {
@@ -10,7 +10,7 @@ public class SignupDTO
 
     private Guid roleID;
 
-    private User.UserType userType;
+    private User.User.UserType userType;
 
     private String firstName;
 
@@ -22,7 +22,7 @@ public class SignupDTO
 
     private String dob;
 
-    private User.Gender gender;
+    private User.User.Gender gender;
 
     private String pictureUrl;
 
