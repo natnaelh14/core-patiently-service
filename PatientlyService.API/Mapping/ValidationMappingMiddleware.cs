@@ -1,8 +1,7 @@
 ﻿using FluentValidation;
-using Movies.Contracts.Responses;
+using PatientlyService.Contract.Responses;
 
-namespace Movies.Api.Mapping;
-
+namespace PatientlyService.API.Mapping;
 public class ValidationMappingMiddleware
 {
     private readonly RequestDelegate _next;
@@ -29,7 +28,6 @@ public class ValidationMappingMiddleware
                     Message = x.ErrorMessage
                 })
             };
-
             await context.Response.WriteAsJsonAsync(validationFailureResponse);
         }
     }

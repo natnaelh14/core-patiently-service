@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientlyService.Core", "Pa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientlyService.API", "PatientlyService.API\PatientlyService.API.csproj", "{F26D466D-FCDC-4176-B19E-B6BB4B0F225A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientlyService.Contract", "PatientlyService.Contract\PatientlyService.Contract.csproj", "{6D1C62A6-B2E4-4B66-B5EE-469AEAE5C747}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{F26D466D-FCDC-4176-B19E-B6BB4B0F225A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F26D466D-FCDC-4176-B19E-B6BB4B0F225A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F26D466D-FCDC-4176-B19E-B6BB4B0F225A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1C62A6-B2E4-4B66-B5EE-469AEAE5C747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1C62A6-B2E4-4B66-B5EE-469AEAE5C747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1C62A6-B2E4-4B66-B5EE-469AEAE5C747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1C62A6-B2E4-4B66-B5EE-469AEAE5C747}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
