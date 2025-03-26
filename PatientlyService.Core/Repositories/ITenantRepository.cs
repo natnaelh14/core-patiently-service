@@ -3,9 +3,10 @@ using PatientlyService.Core.Models.Tenant;
 
 namespace PatientlyService.Core.Repositories;
 
-public class ITenantRepository
+public interface ITenantRepository
 {
-    // Task<Tenant?> GetByIdAsync(Guid id);
+    Task<bool> CreateAsync(Tenant tenant, CancellationToken token = default);
+    Task<IEnumerable<Tenant>> GetAllAsync(GetAllTenantsOptions options, CancellationToken token = default);
 }
 
 
