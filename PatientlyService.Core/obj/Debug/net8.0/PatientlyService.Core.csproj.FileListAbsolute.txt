@@ -1,0 +1,8 @@
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.csproj.AssemblyReference.cache
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.AssemblyInfoInputs.cache
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.AssemblyInfo.cs
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.csproj.CoreCompileInputs.cache
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.MvcApplicationPartsAssemblyInfo.cs
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.MvcApplicationPartsAssemblyInfo.cache
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.sourcelink.json

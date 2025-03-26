@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/PatientlyService.Core.props" />
+</Project>

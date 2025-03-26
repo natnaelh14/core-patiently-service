@@ -1,18 +1,37 @@
 namespace PatientlyService.Core.Models.Tenant;
 
-public class Tenant
+public partial class Tenant
 {
-    private Guid id;
+    public Guid Id;
 
-    private String name;
+    public String Name;
 
-    private String streetAddress;
+    public String StreetAddress;
 
-    private String city;
+    public String City;
+    
+    public String State;
 
-    private String country;
+    public String Country;
 
-    private String zipcode;
+    public String ZipCode;
 
-    private String pictureUrl;
+    public String PictureUrl;
+}
+
+public class GetAllTenantsOptions
+{
+    public string? Name { get; set; }
+
+    public string? SortField { get; set; }
+
+    public SortOrder? SortOrder { get; set; }
+    
+}
+
+public enum SortOrder
+{
+    Unsorted,
+    Ascending,
+    Descending
 }
