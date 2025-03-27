@@ -48,6 +48,14 @@ builder.Services.AddAuthorization(x =>
             c.User.HasClaim(m => m is { Type: AuthConstants.TrustedMemberClaimName, Value: "true" })));
 });
 
+// builder.Services.AddCors(options =>
+// {
+//     options.AddPolicy("AllowSpecificOrigin",
+//         policy => policy.WithOrigins("http://localhost:5103") // Change to your frontend URL
+//             .AllowAnyHeader()
+//             .AllowAnyMethod());
+// });
+
 builder.Services.AddApiVersioning(x =>
 {
     x.DefaultApiVersion = new ApiVersion(1.0);

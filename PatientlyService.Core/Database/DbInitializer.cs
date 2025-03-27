@@ -14,9 +14,9 @@ public class DbInitializer
     public async Task InitializeAsync()
     {
         using var connection = await _dbConnectionFactory.CreateConnectionAsync();
-
+        
         await connection.ExecuteAsync("""
-                                          create table if not exists tenant (
+                                          create table if not exists tenants (
                                           id UUID primary key,
                                           name TEXT not null, 
                                           streetaddress TEXT not null,
@@ -27,6 +27,5 @@ public class DbInitializer
                                           pictureurl TEXT not null
                                          );
                                       """);
-        
     }
 }

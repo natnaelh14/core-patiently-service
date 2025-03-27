@@ -4,7 +4,7 @@ public static class ApiEndpoints
 {
     private const string ApiBase = "api";
     
-    public static class TenantService
+    public static class Tenant
     {
         private const string Base = $"{ApiBase}/tenants";
 

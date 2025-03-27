@@ -19,7 +19,7 @@ public class TenantController: ControllerBase
         _tenantService = tenantService;
     }
     // [Authorize(AuthConstants.TrustedMemberPolicyName)]
-    [HttpPost(ApiEndpoints.TenantService.Create)]
+    [HttpPost(ApiEndpoints.Tenant.Create)]
     [ProducesResponseType(typeof(TenantResponse), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ValidationFailureResponse), StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> Create([FromBody]CreateTenantRequest request,
@@ -28,7 +28,7 @@ public class TenantController: ControllerBase
         var tenant = request.MapToTenant();
         await _tenantService.CreateAsync(tenant, token);
         var tenantResponse = tenant.MapToResponse();
-        return CreatedAtAction("ok",tenantResponse);
+        return Ok(tenantResponse);
     }
 
 }
