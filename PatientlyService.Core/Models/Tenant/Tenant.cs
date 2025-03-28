@@ -21,8 +21,6 @@ public partial class Tenant
 
 public class GetAllTenantsOptions
 {
-    public string? Name { get; set; }
-
     public string? SortField { get; set; }
 
     public SortOrder? SortOrder { get; set; }

@@ -4,14 +4,11 @@
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/PatientlyService.Core.AssemblyInfo.cs
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/PatientlyService.Core.csproj.CoreCompileInputs.cache
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/PatientlyService.Core.sourcelink.json
-/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Contract.staticwebassets.endpoints.json
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/global.json
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Core.staticwebassets.endpoints.json
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Core.deps.json
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Core.dll
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Core.pdb
-/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Contract.dll
-/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Contract.pdb
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/scopedcss/bundle/PatientlyService.Core.styles.css
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/staticwebassets.build.json
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/staticwebassets.development.json
@@ -22,8 +19,11 @@
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.PatientlyService.Core.props
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.PatientlyService.Core.props
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/staticwebassets.pack.json
-/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/Patientl.6BE80D02.Up2Date
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/PatientlyService.Core.dll
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/refint/PatientlyService.Core.dll
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/PatientlyService.Core.pdb
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/ref/PatientlyService.Core.dll
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Contract.staticwebassets.endpoints.json
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Contract.dll
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Contract.pdb
+/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/Patientl.6BE80D02.Up2Date
