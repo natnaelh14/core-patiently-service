@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pp/mKRfF2gE=",
+  "success": true,
+  "projectFilePath": "/Users/nate/Desktop/core-patiently-service/PatientlyService.Contract/PatientlyService.Contract.csproj",
+  "expectedPackageFiles": [
+    "/Users/nate/.nuget/packages/microsoft.aspnetcore.openapi/9.0.1/microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+    "/Users/nate/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

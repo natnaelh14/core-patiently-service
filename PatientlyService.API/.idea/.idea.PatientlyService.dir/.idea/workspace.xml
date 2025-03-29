@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8e2870e2-44fd-4135-a8d8-93fedc82c470" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.idea.CorePatientlyService/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.idea.CorePatientlyService/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mapping/ContractMapping.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mapping/ValidationMappingMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientlyService.Contract/Requests/CreateTenantRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientlyService.Contract/Responses/TenantResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientlyService.Contract/Responses/TenantsResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientlyService.Contract/Responses/ValidationFailureResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientlyService.Core/ApplicationServiceCollectionExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientlyService.Core/IApplicationMarker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientlyService.Core/Repositories/TenantRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientlyService.Core/Validators/TenantValidator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientlyService.Core/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CorePatientlyService.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../CorePatientlyService.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiEndpoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApiEndpoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AuthController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/TenantController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/TenantController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientlyService.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PatientlyService.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/PatientlyService.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/PatientlyService.API.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/PatientlyService.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/PatientlyService.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/PatientlyService.API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/PatientlyService.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/PatientlyService.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/PatientlyService.API.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/PatientlyService.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/PatientlyService.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/PatientlyService.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PatientlyService.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/PatientlyService.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PatientlyService.API.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/PatientlyService.API.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PatientlyService.API.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/Mappings/AutoMapperProfiles.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/Models/Tenant/Tenant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/Models/Tenant/Tenant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/PatientlyService.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/PatientlyService.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/Repositories/ITenantRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/Repositories/ITenantRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/Repositories/SQLPatientUserRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/Repositories/SQLStaffUserRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/Repositories/SQLTenantRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/obj/Debug/net8.0/PatientlyService.Core.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/obj/PatientlyService.Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/obj/PatientlyService.Core.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/obj/PatientlyService.Core.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/obj/PatientlyService.Core.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientlyService.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientlyService.Core/obj/rider.project.restore.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2uphoAke5csoXGPeUqHFR3KYIWr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e2870e2-44fd-4135-a8d8-93fedc82c470" name="Changes" comment="" />
+      <created>1742951595960</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742951595960</updated>
+      <workItem from="1742951597144" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

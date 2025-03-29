@@ -26,7 +26,22 @@ public class TenantService : ITenantService
     public async Task<IEnumerable<Tenant>> GetAllAsync(GetAllTenantsOptions options, CancellationToken token = default)
     {
         await _optionsValidator.ValidateAndThrowAsync(options, token);
-        
         return await _tenantRepository.GetAllAsync(options, token);
+    }
+    public async Task<Tenant?> UpdateAsync(Tenant tenant, CancellationToken token = default)
+    {
+        await _tenantValidator.ValidateAndThrowAsync(tenant, cancellationToken: token);
+        var movieExists = await _tenantRepository.ExistsByIdAsync(tenant.Id, token);
+        if (!movieExists)
+        {
+            return null;
+        }
+        await _tenantRepository.UpdateAsync(tenant, token);
+        return tenant;
+    }
+
+    public Task<bool> DeleteByIdAsync(Guid id, CancellationToken token = default)
+    {
+        return _tenantRepository.DeleteByIdAsync(id, token);
     }
 }
