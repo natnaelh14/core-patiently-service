@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using PatientlyService.Api.Auth;
 using PatientlyService.API.Mapping; 
 using PatientlyService.Core.Services;
-using PatientlyService.Contract.Responses;
-using PatientlyService.Contract.Requests;
+using PatientlyService.Core.Responses;
+using PatientlyService.Core.Requests;
 
 namespace PatientlyService.API.Controllers;
 
@@ -30,6 +30,7 @@ public class TenantController: ControllerBase
         var tenantResponse = tenant.MapToResponse();
         return Ok(tenantResponse);
     }
+    
     [HttpGet(ApiEndpoints.Tenant.GetAll)]
     [ProducesResponseType(typeof(TenantsResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ValidationFailureResponse), StatusCodes.Status400BadRequest)]

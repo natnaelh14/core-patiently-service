@@ -17,7 +17,7 @@ public class UserInviteService : IUserInviteService
         _userInviteValidator = userInviteValidator;
     }
 
-    public async Task<bool> CreateAsync(UserInvite userInvite, CancellationToken token = default)
+    public async Task<bool> InviteAsync(UserInvite userInvite, CancellationToken token = default)
     {
         await _userInviteValidator.ValidateAndThrowAsync(userInvite, cancellationToken: token);
         return await _userInviteRepository.InviteAsync(userInvite, token);

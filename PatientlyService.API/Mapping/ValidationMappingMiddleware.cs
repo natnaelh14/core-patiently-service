@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using PatientlyService.Contract.Responses;
+using PatientlyService.Core.Responses;
 
 namespace PatientlyService.API.Mapping;
 public class ValidationMappingMiddleware

@@ -10,6 +10,8 @@ public class UserInviteValidator : AbstractValidator<UserInvite>
     public UserInviteValidator(IUserInviteRepository userInviteRepository)
     {
         _userInviteRepository = userInviteRepository;
+        RuleFor(x => x.Id)
+            .NotEmpty();
         RuleFor(x => x.TenantId)
             .NotEmpty();
         RuleFor(x => x.RoleId)

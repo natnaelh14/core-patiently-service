@@ -1,6 +1,7 @@
 ﻿using PatientlyService.Core.Models.Tenant;
-using PatientlyService.Contract.Requests;
-using PatientlyService.Contract.Responses;
+using  PatientlyService.Core.Models.User;
+using PatientlyService.Core.Requests;
+using PatientlyService.Core.Responses;
 
 namespace PatientlyService.API.Mapping;
 
@@ -33,6 +34,34 @@ public static class ContractMapping
             Country = request.Country,
             ZipCode = request.ZipCode,
             PictureUrl = request.PictureUrl
+        };
+    }
+    
+    public static UserInvite MapToUserInvite(this UserInviteRequest request)
+    {
+        return new UserInvite
+        {
+            Id = Guid.NewGuid(),
+            TenantId =request.tenantId,
+            UserType = request.userType,
+            RoleId = request.roleId,
+            Prefix = request.prefix,
+            FirstName = request.firstName,
+            Email = request.email,
+        };
+    }
+    
+    public static UserInviteResponse MapToResponse(this UserInvite userInvite)
+    {
+        return new UserInviteResponse
+        {
+            Id = Guid.NewGuid(),
+            TenantId =userInvite.TenantId,
+            UserType = userInvite.UserType,
+            RoleId = userInvite.RoleId,
+            Prefix = userInvite.Prefix,
+            FirstName = userInvite.FirstName,
+            Email = userInvite.Email,
         };
     }
     

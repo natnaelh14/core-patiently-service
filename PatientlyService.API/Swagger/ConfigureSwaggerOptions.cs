@@ -28,7 +28,6 @@ public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
                     Version = description.ApiVersion.ToString(),
                 });
         }
-        
         options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
             In = ParameterLocation.Header,
@@ -38,7 +37,6 @@ public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
             BearerFormat = "JWT",
             Scheme = "Bearer"
         });
-        
         options.AddSecurityRequirement(new OpenApiSecurityRequirement
         {
             {

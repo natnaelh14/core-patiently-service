@@ -1,3 +1,5 @@
+using PatientlyService.Core.Models.User;
+
 namespace PatientlyService.Core.Responses;
 
 public class UserResponse
@@ -27,11 +29,6 @@ public class UserResponse
     private DateTime createdAt;
 
     private DateTime modifiedAt;
-}
-public enum UserType {
-    INTERNAL,
-    STAFF,
-    PATIENT
 }
 
 public enum Gender {
