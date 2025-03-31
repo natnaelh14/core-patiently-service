@@ -2,9 +2,9 @@ namespace PatientlyService.Core.Models.User;
 
 public class StaffUser
 {
-    private Guid id;
+    private Guid Id;
 
-    private Guid userId;
+    private Guid UserId;
 
-    private String jobTitle;
+    private String JobTitle;
 }

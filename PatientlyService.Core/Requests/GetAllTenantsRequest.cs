@@ -1,4 +1,4 @@
-namespace PatientlyService.Contract.Requests;
+namespace PatientlyService.Core.Requests;
 
 public class GetAllTenantsRequest
 {

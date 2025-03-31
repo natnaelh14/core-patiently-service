@@ -23,7 +23,3 @@
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/refint/PatientlyService.Core.dll
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/PatientlyService.Core.pdb
 /Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/ref/PatientlyService.Core.dll
-/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Contract.staticwebassets.endpoints.json
-/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Contract.dll
-/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/bin/Debug/net9.0/PatientlyService.Contract.pdb
-/Users/nate/Desktop/core-patiently-service/PatientlyService.Core/obj/Debug/net9.0/Patientl.6BE80D02.Up2Date

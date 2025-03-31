@@ -2,26 +2,24 @@ namespace PatientlyService.Core.Models.User;
 
 public class PatientUser
 {
-    private Guid id;
+    public Guid UserId;
 
-    private Guid userId;
+    public String SSN;
 
-    private String ssn;
+    public IdentificationType IdentificationType;
 
-    private IdentificationType identificationType;
+    public String IdentificationUrl;
 
-    private String identificationUrl;
+    public Boolean TreatmentConsentChecked;
 
-    private Boolean treatmentConsentChecked;
+    public Boolean PrivacyConsentChecked;
 
-    private Boolean privacyConsentChecked;
-
-    private Boolean disclosureConsent;
-    private enum IdentificationType {
+    public Boolean DisclosureConsent;
+}
+    public enum IdentificationType {
         DRIVERS_LICENSE,
         PASSPORT,
         STATE_ID,
         MILITARY_ID,
         OTHER
     }
-}
