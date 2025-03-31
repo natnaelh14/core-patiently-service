@@ -1,7 +1,6 @@
 using FluentValidation;
 using PatientlyService.Core.Models.Tenant;
 using PatientlyService.Core.Repositories;
-using PatientlyService.Core.Services;
 
 namespace PatientlyService.Core.Validators;
 

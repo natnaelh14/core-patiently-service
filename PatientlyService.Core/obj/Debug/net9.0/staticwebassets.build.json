@@ -1,23 +1,11 @@
 {
   "Version": 1,
-  "Hash": "wR6RHDkEVhrjTn86qXUkYgFyxV1PIfe+K1y8wEtiOWY=",
+  "Hash": "jT+d5ptGYsoT75d+qcTuI7f3xxnIoRseYZDWaZmhZTg=",
   "Source": "PatientlyService.Core",
   "BasePath": "_content/PatientlyService.Core",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [
-    {
-      "Identity": "/Users/nate/Desktop/core-patiently-service/PatientlyService.Contract/PatientlyService.Contract.csproj",
-      "Version": 2,
-      "Source": "PatientlyService.Contract",
-      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
-      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
-    }
-  ],
+  "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
   "Assets": [],
   "Endpoints": []

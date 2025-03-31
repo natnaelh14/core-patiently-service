@@ -14,4 +14,16 @@ public static class ApiEndpoints
         public const string Update = $"{Base}/{{id:guid}}";
         public const string Delete = $"{Base}/{{id:guid}}";
     }
+    public static class Patient
+    {
+        private const string Base = $"{ApiBase}/patient";
+        public const string StartRegistration = $"{Base}/startRegistration";
+        public const string CompleteRegistration = $"{Base}/completeRegistration/{{id:guid}}";
+    }
+    
+    public static class User
+    {
+        private const string Base = $"{ApiBase}/user";
+        public const string Invite = $"{Base}/invite";
+    }
 }

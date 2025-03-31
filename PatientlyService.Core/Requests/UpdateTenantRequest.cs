@@ -1,8 +1,7 @@
-namespace PatientlyService.Contract.Responses;
+namespace PatientlyService.Core.Requests;
 
-public class TenantResponse
+public class UpdateTenantRequest
 {
-    public required Guid Id { get; init; }
     public required string Name { get; init; }
     public required string StreetAddress { get; init; }
     public required string City { get; init; }

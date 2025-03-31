@@ -1,4 +1,4 @@
-namespace PatientlyService.Contract.Responses;
+namespace PatientlyService.Core.Responses;
 
 public class ValidationFailureResponse
 {

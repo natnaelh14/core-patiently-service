@@ -1,0 +1,41 @@
+using Dapper;
+using PatientlyService.Core.Database;
+using PatientlyService.Core.Models.User;
+
+namespace PatientlyService.Core.Repositories;
+
+public class UserInviteRepository : IUserInviteRepository
+{
+    private readonly IDbConnectionFactory _dbConnectionFactory;
+    public UserInviteRepository(IDbConnectionFactory dbConnectionFactory)
+    {
+        _dbConnectionFactory = dbConnectionFactory;
+    }
+    public async Task<bool> InviteAsync(UserInvite userInvite, CancellationToken token = default)
+    {
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync(token);
+        var sql = @"
+        INSERT INTO sessions (
+            id, tenantId, roleId, userType, prefix, firstName, email
+        ) VALUES (
+            @Id, @TenantId, @RoleId, @UserType, @Prefix, @FirstName, @Email
+        )";
+
+        var result = await connection.ExecuteAsync(
+            new CommandDefinition(
+                sql,
+                new
+                {
+                    userInvite.Id,
+                    userInvite.TenantId,
+                    userInvite.RoleId,
+                    userInvite.UserType,
+                    userInvite.Prefix,
+                    userInvite.FirstName,
+                    userInvite.Email
+                },
+                cancellationToken: token)
+        );
+        return result > 0;
+    }
+}

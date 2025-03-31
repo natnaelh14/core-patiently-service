@@ -2,52 +2,37 @@ namespace PatientlyService.Core.Models.User;
 
 public class User
 {
-    private Guid id;
-    
-    private String email;
+    private Guid Id;
+    private String Email;
+    private String Password; 
+    private String PictureUrl;
+    private Guid RoleId;
+    private Status Status;
+    private UserType UserType;
+    private String FirstName;
+    private String MiddleName;
+    private String LastName;
+    private String PhoneNumber;
+    private String DOB;
+    private Gender Gender;
+    private DateTime CreatedAt;
+    private DateTime ModifiedAt;
+}
 
-    private String password; 
-
-    private String pictureUrl;
-
-    private Guid roleId;
-
-    private Status status;
-
-    private UserType userType;
-
-    private String firstName;
-    
-    private String middleName;
-    
-    private String lastName;
-
-    private String phoneNumber;
-    
-    private String dob;
-
-    private String encryptedGender;
-    
-    private DateTime createdAt;
-    
-    private DateTime modifiedAt;
- 
     // Enum declarations
     public enum UserType {
         INTERNAL,
         STAFF,
         PATIENT
     }
-
     public enum Gender {
         MALE,
         FEMALE,
         OTHER
     }
-
     public enum Status {
         PENDING_REGISTRATION,
         REGISTERED,
         INACTIVE
     }
-}
+

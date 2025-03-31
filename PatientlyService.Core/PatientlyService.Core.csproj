@@ -21,9 +21,5 @@
         <PackageReference Include="Npgsql" Version="9.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\PatientlyService.Contract\PatientlyService.Contract.csproj" />
-    </ItemGroup>
     
 </Project>

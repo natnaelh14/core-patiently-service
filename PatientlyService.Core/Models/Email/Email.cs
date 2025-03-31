@@ -2,9 +2,9 @@ namespace PatientlyService.Core.Models.Email;
 
 public class Email
 {
-    private String to;
+    private String To;
 
-    private String subject;
+    private String Subject;
 
-    private String body;
+    private String Body;
 }
