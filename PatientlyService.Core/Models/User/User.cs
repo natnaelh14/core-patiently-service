@@ -19,20 +19,19 @@ public class User
     private DateTime ModifiedAt;
 }
 
-    // Enum declarations
-    public enum UserType {
-        INTERNAL,
-        STAFF,
-        PATIENT
-    }
-    public enum Gender {
-        MALE,
-        FEMALE,
-        OTHER
-    }
-    public enum Status {
-        PENDING_REGISTRATION,
-        REGISTERED,
-        INACTIVE
-    }
+public enum UserType {
+    INTERNAL,
+    STAFF,
+    PATIENT
+}
+public enum Gender {
+    MALE,
+    FEMALE,
+    OTHER
+}
+public enum Status {
+    PENDING_REGISTRATION,
+    REGISTERED,
+    INACTIVE
+}
 

@@ -28,6 +28,15 @@ public class TenantService : ITenantService
         await _optionsValidator.ValidateAndThrowAsync(options, token);
         return await _tenantRepository.GetAllAsync(options, token);
     }
+    public async Task<Tenant?> GetByIdAsync(Guid id, CancellationToken token = default)
+    {
+        var tenant = await _tenantRepository.GetByIdAsync(id, token);
+        if (tenant == null)
+        {
+            return null;
+        }
+        return tenant;
+    }
     public async Task<Tenant?> UpdateAsync(Tenant tenant, CancellationToken token = default)
     {
         await _tenantValidator.ValidateAndThrowAsync(tenant, cancellationToken: token);
