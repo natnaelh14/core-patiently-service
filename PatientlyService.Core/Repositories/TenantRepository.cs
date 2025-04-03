@@ -118,4 +118,15 @@ public class TenantRepository : ITenantRepository
            select count(1) from tenants where id = @id
            """, new { id }, cancellationToken: token));
     }
+    public async Task<Tenant?> GetByIdAsync(Guid id, CancellationToken token = default)
+    {
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync(token);
+        var query = """
+            SELECT * 
+            FROM tenants 
+            WHERE Id = @Id
+            """;
+        return await connection.QuerySingleOrDefaultAsync<Tenant>(
+            new CommandDefinition(query, new { Id = id }, cancellationToken: token));
+    }
 }

@@ -4,15 +4,16 @@ namespace PatientlyService.Core.Requests;
 
 public class UserInviteRequest
 {
-    public Guid tenantId;
+    public required Guid tenantId { get; init; }
 
-    public UserType userType;
+    public required UserType userType { get; init; }
 
-    public Guid roleId;
+    public required Guid roleId { get; init; }
 
-    public String prefix;
+    public required String prefix { get; init; }
 
-    public String firstName;
+    public required String firstName { get; init; }
 
-    public String email;
+    public required String email { get; init; }
+
 }

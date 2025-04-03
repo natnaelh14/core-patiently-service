@@ -25,13 +25,13 @@ public class DbInitializer
                                          );
                                       CREATE TABLE IF NOT EXISTS sessions (
                                           id UUID PRIMARY KEY,
-                                          tenant_id UUID NOT NULL,
-                                          role_id UUID NOT NULL,
-                                          user_type INT NOT NULL,
+                                          tenantid UUID NOT NULL,
+                                          roleid UUID NOT NULL,
+                                          usertype INT NOT NULL,
                                           prefix TEXT NOT NULL,
-                                          first_name TEXT NOT NULL,
+                                          firstname TEXT NOT NULL,
                                           email TEXT NOT NULL,
-                                          FOREIGN KEY (tenant_id) REFERENCES tenants (id) ON DELETE CASCADE
+                                          FOREIGN KEY (tenantid) REFERENCES tenants (id) ON DELETE CASCADE
                                       );
                                       """);
     }

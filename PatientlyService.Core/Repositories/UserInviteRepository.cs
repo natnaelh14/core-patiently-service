@@ -16,7 +16,7 @@ public class UserInviteRepository : IUserInviteRepository
         using var connection = await _dbConnectionFactory.CreateConnectionAsync(token);
         var sql = @"
         INSERT INTO sessions (
-            id, tenantId, roleId, userType, prefix, firstName, email
+            id, tenantid, roleid, usertype, prefix, firstname, email
         ) VALUES (
             @Id, @TenantId, @RoleId, @UserType, @Prefix, @FirstName, @Email
         )";
