@@ -1,6 +1,7 @@
 using PatientlyService.Core.Models.User;
 using FluentValidation;
 using PatientlyService.Core.Repositories;
+
 namespace PatientlyService.Core.Validators;
 
 public class UserInviteValidator : AbstractValidator<UserInvite>
