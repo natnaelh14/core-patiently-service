@@ -13,6 +13,8 @@ public static class ApplicationServiceCollectionExtensions
         services.AddSingleton<ITenantService, TenantService>();
         services.AddSingleton<IUserInviteRepository, UserInviteRepository>();
         services.AddSingleton<IUserInviteService, UserInviteService>();
+        services.AddSingleton<IUserRepository, UserRepository>();
+        services.AddSingleton<IUserService, UserService>();
         services.AddValidatorsFromAssemblyContaining<IApplicationMarker>(ServiceLifetime.Singleton);
         return services;
     }
