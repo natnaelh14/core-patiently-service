@@ -28,7 +28,7 @@ public class TenantController: ControllerBase
         var tenant = request.MapToTenant();
         await _tenantService.CreateAsync(tenant, token);
         var tenantResponse = tenant.MapToResponse();
-        return Ok(tenantResponse);
+        return CreatedAtAction(nameof(Create), new { id = tenantResponse.Id }, tenantResponse);
     }
     
     [HttpGet(ApiEndpoints.Tenant.GetAll)]
@@ -41,6 +41,21 @@ public class TenantController: ControllerBase
         var tenant = await _tenantService.GetAllAsync(options, token);
         var moviesResponse = tenant.MapToResponse();
         return Ok(moviesResponse);
+    }
+    
+    [HttpGet(ApiEndpoints.Tenant.Get)]
+    [ProducesResponseType(typeof(TenantResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> Get([FromRoute] string id,
+        CancellationToken token)
+    {
+        var tenant = Guid.TryParse(id, out var paramId) ? await _tenantService.GetByIdAsync(paramId, token) : null;
+        if (tenant is null)
+        {
+            return NotFound();
+        }
+        var response = tenant.MapToResponse();
+        return Ok(response);
     }
     
     [HttpPut(ApiEndpoints.Tenant.Update)]

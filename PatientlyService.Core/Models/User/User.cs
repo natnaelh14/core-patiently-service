@@ -20,18 +20,18 @@ public class User
 }
 
 public enum UserType {
-    INTERNAL,
-    STAFF,
-    PATIENT
+    INTERNAL = 0,
+    STAFF = 1,
+    PATIENT = 2
 }
 public enum Gender {
-    MALE,
-    FEMALE,
-    OTHER
+    MALE = 0,
+    FEMALE = 1,
+    OTHER = 2
 }
 public enum Status {
-    PENDING_REGISTRATION,
-    REGISTERED,
-    INACTIVE
+    PENDING_REGISTRATION = 0,
+    REGISTERED = 1,
+    INACTIVE = 2
 }
 
