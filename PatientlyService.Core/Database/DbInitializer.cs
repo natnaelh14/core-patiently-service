@@ -29,7 +29,7 @@ public class DbInitializer
                                           password TEXT not null,
                                           pictureurl TEXT not null,
                                           roleid UUID not null,
-                                          status TEXT not null,
+                                          status INT not null,
                                           usertype INT not null,
                                           firstname TEXT not null,
                                           middlename TEXT not null,

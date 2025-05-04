@@ -50,18 +50,61 @@ public static class ContractMapping
             Email = request.email,
         };
     }
+
+    public static User MapToUser(this UserRequest request)
+    {
+        return new User
+        {
+            Id = Guid.NewGuid(),
+            Email = request.email,
+            Password = request.password,
+            PictureUrl = request.pictureUrl,
+            RoleId = request.roleId,
+            Status = request.status,
+            UserType = request.userType,
+            FirstName = request.firstName,
+            MiddleName = request.middleName,
+            LastName = request.lastName,
+            PhoneNumber = request.phoneNumber,
+            DOB = request.dob,
+            Gender = request.gender,
+            CreatedAt = DateTime.UtcNow,
+            ModifiedAt = DateTime.UtcNow
+        };
+    }
     
     public static UserInviteResponse MapToResponse(this UserInvite userInvite)
     {
         return new UserInviteResponse
         {
-            Id = Guid.NewGuid(),
+            Id = userInvite.Id,
             TenantId =userInvite.TenantId,
             UserType = userInvite.UserType,
             RoleId = userInvite.RoleId,
             Prefix = userInvite.Prefix,
             FirstName = userInvite.FirstName,
             Email = userInvite.Email,
+        };
+    }
+
+    public static UserResponse MapToResponse(this User user)
+    {
+        return new UserResponse
+        {
+            Id = user.Id,
+            Email = user.Email,
+            PictureUrl = user.PictureUrl,
+            RoleId = user.RoleId,
+            Status = user.Status,
+            UserType = user.UserType,
+            FirstName = user.FirstName,
+            MiddleName = user.MiddleName,
+            LastName = user.LastName,
+            PhoneNumber = user.PhoneNumber,
+            DOB = user.DOB,
+            Gender = user.Gender,
+            CreatedAt = user.CreatedAt,
+            ModifiedAt = user.ModifiedAt
         };
     }
     
@@ -84,7 +127,6 @@ public static class ContractMapping
         return new TenantsResponse
         {
             TenantsResponses = tenants.Select(MapToResponse).ToList()
-
         };
     }
     public static GetAllTenantsOptions MapToOptions(this GetAllTenantsRequest request)

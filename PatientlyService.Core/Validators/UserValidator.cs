@@ -21,9 +21,9 @@ public class UserValidator: AbstractValidator<User>
         RuleFor(x => x.RoleId)
             .NotEmpty();
         RuleFor(x => x.Status)
-            .NotEmpty();
+            .IsInEnum();
         RuleFor(x => x.UserType)
-            .NotEmpty();
+            .IsInEnum();
         RuleFor(x => x.FirstName)
             .NotEmpty();
         RuleFor(x => x.MiddleName)
@@ -35,6 +35,6 @@ public class UserValidator: AbstractValidator<User>
         RuleFor(x => x.DOB)
             .NotEmpty();
         RuleFor(x => x.Gender)
-            .NotEmpty();
+            .IsInEnum();
     }
 }
