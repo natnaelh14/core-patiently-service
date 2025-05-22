@@ -12,7 +12,6 @@ public class TenantRepository : ITenantRepository
     {
         _dbConnectionFactory = dbConnectionFactory;
     }
-
     public async Task<bool> CreateAsync(Tenant tenant, CancellationToken token = default)
     {
         using var connection = await _dbConnectionFactory.CreateConnectionAsync(token);

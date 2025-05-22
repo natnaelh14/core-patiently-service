@@ -1,6 +1,6 @@
 namespace PatientlyService.Core.Models.User;
 
-public partial class UserInvite {
+public class UserInvite {
     public Guid Id;
 
     public Guid TenantId;

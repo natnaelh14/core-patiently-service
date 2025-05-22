@@ -27,4 +27,12 @@ public static class ApiEndpoints
         public const string Signup = $"{Base}/signup";
         public const string Invite = $"{Base}/invite";
     }
+
+    public static class Permission
+    {
+        private const string Base = $"{ApiBase}/permission";
+        public const string Get = $"{Base}/{{id:guid}}";
+        public const string GetAll = Base;
+        public const string Create = Base;
+    }
 }

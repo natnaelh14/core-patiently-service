@@ -15,6 +15,8 @@ public static class ApplicationServiceCollectionExtensions
         services.AddSingleton<IUserInviteService, UserInviteService>();
         services.AddSingleton<IUserRepository, UserRepository>();
         services.AddSingleton<IUserService, UserService>();
+        services.AddSingleton<IPermissionRepository, PermissionRepository>();
+        services.AddSingleton<IPermissionService, PermissionService>();
         services.AddValidatorsFromAssemblyContaining<IApplicationMarker>(ServiceLifetime.Singleton);
         return services;
     }
