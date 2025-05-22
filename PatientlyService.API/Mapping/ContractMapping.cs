@@ -73,6 +73,19 @@ public static class ContractMapping
         };
     }
     
+    public static Permission MapToPermission(this CreatePermissionRequest request)
+    {
+        return new Permission
+        {
+            Id = Guid.NewGuid(),
+            PermissionCode = request.PermissionCode,
+            DisplayName = request.DisplayName,
+            Description = request.Description,
+            Category = request.Category,
+            IsEnabled = request.IsEnabled
+        };
+    }
+    
     public static UserInviteResponse MapToResponse(this UserInvite userInvite)
     {
         return new UserInviteResponse
@@ -129,6 +142,27 @@ public static class ContractMapping
             TenantsResponses = tenants.Select(MapToResponse).ToList()
         };
     }
+    
+    public static PermissionResponse MapToResponse(this Permission permission)
+    {
+        return new PermissionResponse
+        {
+            Id = permission.Id,
+            PermissionCode = permission.PermissionCode,
+            DisplayName = permission.DisplayName,
+            Description = permission.Description,   
+            Category = permission.Category,
+            IsEnabled = permission.IsEnabled
+        };
+    }
+    public static PermissionsResponse MapToResponse(this IEnumerable<Permission> permissions)
+    {
+        return new PermissionsResponse
+        {
+            PermissionsResponses = permissions.Select(MapToResponse).ToList()
+        };
+    }
+    
     public static GetAllTenantsOptions MapToOptions(this GetAllTenantsRequest request)
     {
         return new GetAllTenantsOptions
