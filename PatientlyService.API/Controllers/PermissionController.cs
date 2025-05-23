@@ -42,5 +42,15 @@ public class PermissionController: ControllerBase
         var permissionResponse = permission.MapToResponse();
         return Ok(permissionResponse);
     }
+    
+    [HttpGet(ApiEndpoints.Permission.GetAll)]
+    [ProducesResponseType(typeof(IEnumerable<PermissionResponse>), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ValidationFailureResponse), StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> GetAll(CancellationToken token)
+    {
+        var permissions = await _permissionService.GetAllAsync(token);
+        var permissionResponses = permissions.Select(p => p.MapToResponse());
+        return Ok(permissionResponses);
+    }
 };
 

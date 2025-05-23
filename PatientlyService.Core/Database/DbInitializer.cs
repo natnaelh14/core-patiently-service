@@ -48,14 +48,14 @@ public class DbInitializer
                                           email TEXT NOT NULL,
                                           FOREIGN KEY (tenantid) REFERENCES tenants (id) ON DELETE CASCADE
                                           );
-                                            CREATE TABLE IF NOT EXISTS permissions (
-                                            id UUID PRIMARY KEY,
-                                            permission_code TEXT NOT NULL,
-                                            display_name TEXT NOT NULL,
-                                            description TEXT NOT NULL,
-                                            category TEXT NOT NULL,
-                                            is_enabled BOOLEAN NOT NULL
-                                            );   
-                                      """);
+                                          CREATE TABLE IF NOT EXISTS permissions (
+                                          id UUID PRIMARY KEY,
+                                          permission_code TEXT NOT NULL,
+                                          display_name TEXT NOT NULL,
+                                          description TEXT NOT NULL,
+                                          category TEXT NOT NULL,
+                                          is_enabled BOOLEAN NOT NULL
+                                          );   
+    """);
     }
 }
