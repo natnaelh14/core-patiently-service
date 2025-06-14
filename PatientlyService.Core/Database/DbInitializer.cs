@@ -50,10 +50,10 @@ public class DbInitializer
                                           );
                                           CREATE TABLE IF NOT EXISTS permissions (
                                           id UUID PRIMARY KEY,
-                                          permission_code TEXT NOT NULL,
+                                          permission_code INT NOT NULL,
                                           display_name TEXT NOT NULL,
                                           description TEXT NOT NULL,
-                                          category TEXT NOT NULL,
+                                          category INT NOT NULL,
                                           is_enabled BOOLEAN NOT NULL
                                           );   
     """);

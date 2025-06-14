@@ -29,7 +29,6 @@ public class PermissionRepository: IPermissionRepository
                 {
                     permission.Id,
                     permission.PermissionCode,
-                    permission.DisplayName,
                     permission.Description,
                     permission.Category,
                     permission.IsEnabled

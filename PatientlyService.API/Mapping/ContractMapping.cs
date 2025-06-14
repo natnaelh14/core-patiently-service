@@ -79,7 +79,6 @@ public static class ContractMapping
         {
             Id = Guid.NewGuid(),
             PermissionCode = request.PermissionCode,
-            DisplayName = request.DisplayName,
             Description = request.Description,
             Category = request.Category,
             IsEnabled = request.IsEnabled
@@ -149,7 +148,6 @@ public static class ContractMapping
         {
             Id = permission.Id,
             PermissionCode = permission.PermissionCode,
-            DisplayName = permission.DisplayName,
             Description = permission.Description,   
             Category = permission.Category,
             IsEnabled = permission.IsEnabled

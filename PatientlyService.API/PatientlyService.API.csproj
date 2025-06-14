@@ -20,5 +20,5 @@
     <ItemGroup>
       <ProjectReference Include="..\PatientlyService.Core\PatientlyService.Core.csproj" />
     </ItemGroup>
-
+    
 </Project>
