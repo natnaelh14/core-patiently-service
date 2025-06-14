@@ -14,8 +14,6 @@ public class PermissionValidator: AbstractValidator<Permission>
             .NotEmpty();
         RuleFor(x => x.PermissionCode)
             .NotEmpty();
-        RuleFor(x => x.DisplayName)
-            .NotEmpty();
         RuleFor(x => x.Description)
             .NotEmpty();
         RuleFor(x => x.Category)
