@@ -22,13 +22,13 @@ public class RoleService: IRoleService
         return await _roleRepository.CreateAsync(role, token);
     }
 
-    // public async Task<IEnumerable<Role>> GetAllAsync(CancellationToken token = default)
-    // {
-    //     return await _roleRepository.GetAllAsync(token);
-    // }
-    //
-    // public async Task<Role?> GetByIdAsync(Guid id, CancellationToken token = default)
-    // {
-    //     return await _roleRepository.GetByIdAsync(id, token);
-    // }
+    public async Task<IEnumerable<Role>> GetAllAsync(CancellationToken token = default)
+    {
+        return await _roleRepository.GetAllAsync(token);
+    }
+    
+    public async Task<Role?> GetByIdAsync(Guid id, CancellationToken token = default)
+    {
+        return await _roleRepository.GetByIdAsync(id, token);
+    }
 }

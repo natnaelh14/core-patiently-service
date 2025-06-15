@@ -28,4 +28,28 @@ public class RoleController: ControllerBase
         var roleResponse = role.MapToResponse();
         return CreatedAtAction(nameof(Create), new { id = roleResponse.Id }, roleResponse);
     }
+    
+    [HttpGet(ApiEndpoints.Role.Get)]
+    [ProducesResponseType(typeof(RoleResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ValidationFailureResponse), StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> Get([FromRoute] Guid id, CancellationToken token)
+    {
+        var role = await _roleService.GetByIdAsync(id, token);
+        if (role is null)
+        {
+            return NotFound();
+        }
+        var permissionResponse = role.MapToResponse();
+        return Ok(permissionResponse);
+    }
+    
+    [HttpGet(ApiEndpoints.Role.GetAll)]
+    [ProducesResponseType(typeof(IEnumerable<RoleResponse>), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ValidationFailureResponse), StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> GetAll(CancellationToken token)
+    {
+        var roles = await _roleService.GetAllAsync(token);
+        var roleResponses = roles.Select(p => p.MapToResponse());
+        return Ok(roleResponses);
+    }
 }
