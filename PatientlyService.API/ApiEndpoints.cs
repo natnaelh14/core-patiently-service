@@ -35,4 +35,12 @@ public static class ApiEndpoints
         public const string GetAll = Base;
         public const string Create = Base;
     }
+
+    public static class Role
+    {
+        private const string Base = $"{ApiBase}/roles";
+        public const string Get = $"{Base}/{{id:guid}}";
+        public const string GetAll = Base;
+        public const string Create = Base;
+    }
 }

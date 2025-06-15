@@ -85,6 +85,16 @@ public static class ContractMapping
         };
     }
     
+    public static Role MapToRole(this CreateRoleRequest request)
+    {
+        return new Role()
+        {
+            Id = Guid.NewGuid(),
+            Name = request.Name,
+            PermissionIds = request.PermissionIds
+        };
+    }
+    
     public static UserInviteResponse MapToResponse(this UserInvite userInvite)
     {
         return new UserInviteResponse
@@ -158,6 +168,16 @@ public static class ContractMapping
         return new PermissionsResponse
         {
             PermissionsResponses = permissions.Select(MapToResponse).ToList()
+        };
+    }
+    
+    public static RoleResponse MapToResponse(this Role role)
+    {
+        return new RoleResponse
+        {
+            Id = role.Id,
+            Name = role.Name,
+            PermissionIds = role.PermissionIds.ToList()
         };
     }
     

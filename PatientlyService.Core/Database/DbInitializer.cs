@@ -55,7 +55,24 @@ public class DbInitializer
                                           description TEXT NOT NULL,
                                           category INT NOT NULL,
                                           is_enabled BOOLEAN NOT NULL
-                                          );   
+                                          );
+                                        CREATE TABLE IF NOT EXISTS roles (
+                                        id UUID PRIMARY KEY,
+                                        name TEXT NOT NULL
+                                        );
+                                        CREATE TABLE IF NOT EXISTS rolepermissions (
+                                        RoleId UUID NOT NULL,
+                                        PermissionId UUID NOT NULL,
+                                        PRIMARY KEY (RoleId, PermissionId),
+                                        CONSTRAINT FK_RolePermissions_Roles
+                                            FOREIGN KEY (RoleId)
+                                            REFERENCES Roles (Id)
+                                            ON DELETE CASCADE,
+                                        CONSTRAINT FK_RolePermissions_Permissions
+                                            FOREIGN KEY (PermissionId)
+                                            REFERENCES Permissions (Id)
+                                            ON DELETE CASCADE
+                                        );
     """);
     }
 }
