@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "jT+d5ptGYsoT75d+qcTuI7f3xxnIoRseYZDWaZmhZTg=",
+  "Source": "PatientlyService.Core",
+  "BasePath": "_content/PatientlyService.Core",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
