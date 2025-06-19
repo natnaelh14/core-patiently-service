@@ -70,16 +70,16 @@ public class RoleRepository: IRoleRepository
 
         var roleDict = new Dictionary<Guid, Role>();
 
-        await connection.QueryAsync<Guid, Guid?, Role>(
+        await connection.QueryAsync<Guid, string, Guid?, Role>(
             new CommandDefinition(sql, cancellationToken: token),
-            (roleId, permissionId) =>
+            (roleId, name, permissionId) =>
             {
                 if (!roleDict.TryGetValue(roleId, out var role))
                 {
                     role = new Role
                     {
                         Id = roleId,
-                        Name = "", // optionally set later or join it in the SELECT
+                        Name = name,
                         PermissionIds = new List<Guid>()
                     };
                     roleDict.Add(roleId, role);
@@ -90,13 +90,12 @@ public class RoleRepository: IRoleRepository
 
                 return role;
             },
-            splitOn: "PermissionId"
+            splitOn: "Name,PermissionId"
         );
-
-        // Optional: query role names in a separate query or include it in the mapping above
 
         return roleDict.Values;
     }
+    
     public async Task<Role?> GetByIdAsync(Guid id, CancellationToken token = default)
     {
         using var connection = await _dbConnectionFactory.CreateConnectionAsync(token);
@@ -112,16 +111,16 @@ public class RoleRepository: IRoleRepository
 
         Role? role = null;
 
-        await connection.QueryAsync<Guid, Guid?, Role>(
+        await connection.QueryAsync<Guid, string, Guid?, Role>(
             new CommandDefinition(sql, new { Id = id }, cancellationToken: token),
-            (roleId, permissionId) =>
+            (roleId, name, permissionId) =>
             {
                 if (role == null)
                 {
                     role = new Role
                     {
                         Id = roleId,
-                        Name = "", // If you need the name, add to SELECT
+                        Name = name,
                         PermissionIds = new List<Guid>()
                     };
                 }
@@ -131,7 +130,7 @@ public class RoleRepository: IRoleRepository
 
                 return role;
             },
-            splitOn: "PermissionId"
+            splitOn: "Name,PermissionId"
         );
 
         return role;
