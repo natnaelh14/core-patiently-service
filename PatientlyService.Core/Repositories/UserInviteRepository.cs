@@ -38,4 +38,21 @@ public class UserInviteRepository : IUserInviteRepository
         );
         return result > 0;
     }
+    
+    public async Task<UserInvite?> GetSessionByIdAsync(Guid id, CancellationToken token = default)
+    {
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync(token);
+        const string sql = @"
+        SELECT * 
+        FROM sessions 
+        WHERE id = @Id";
+        
+        var result = await connection.QuerySingleOrDefaultAsync<UserInvite>(
+            new CommandDefinition(
+                sql,
+                new { Id = id },
+                cancellationToken: token)
+        );
+        return result;
+    }
 }
