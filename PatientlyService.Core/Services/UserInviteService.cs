@@ -22,4 +22,14 @@ public class UserInviteService : IUserInviteService
         await _userInviteValidator.ValidateAndThrowAsync(userInvite, cancellationToken: token);
         return await _userInviteRepository.InviteAsync(userInvite, token);
     }
+    
+    public async Task<UserInvite> GetSessionByIdAsync(Guid id, CancellationToken token = default)
+    {
+        var result = await _userInviteRepository.GetSessionByIdAsync(id, token);
+        if (result == null)
+        {
+            throw new KeyNotFoundException($"User invite with ID {id} not found.");
+        }
+        return result;
+    }
 }

@@ -26,6 +26,7 @@ public static class ApiEndpoints
         private const string Base = $"{ApiBase}/user";
         public const string Signup = $"{Base}/signup";
         public const string Invite = $"{Base}/invite";
+        public const string GetSession = $"{Base}/session/{{id:guid}}";
     }
 
     public static class Permission

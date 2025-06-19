@@ -32,6 +32,21 @@ public class UserController: ControllerBase
         return CreatedAtAction(nameof(Invite), new { id = inviteResponse.Id }, inviteResponse);
     }
     
+    [HttpGet(ApiEndpoints.User.GetSession)]
+    [ProducesResponseType(typeof(UserInviteResponse), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ValidationFailureResponse), StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> GetSession([FromRoute] string id,
+        CancellationToken token)
+    {
+        var session = Guid.TryParse(id, out var paramId) ? await _userInviteService.GetSessionByIdAsync(paramId, token) : null;
+        if (session is null)
+        {
+            return NotFound();
+        }
+        var response = session.MapToResponse();
+        return Ok(response);
+    }
+    
     [HttpPost(ApiEndpoints.User.Signup)]
     [ProducesResponseType(typeof(UserResponse), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ValidationFailureResponse), StatusCodes.Status400BadRequest)]
